@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "^/api/submit$", "dest": "api/submit.js" },
+    { "handle": "filesystem" },
+    { "src": "^/$", "dest": "index.html" },
+    { "src": "/(.*)", "dest": "$1" }
+  ]
+}

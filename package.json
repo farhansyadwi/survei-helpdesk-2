@@ -1,0 +1,23 @@
+{
+  "name": "acset-helpdesk-survey",
+  "version": "1.0.0",
+  "description": "Survei Kepuasan Pengguna Helpdesk Acset - small web app with Discord webhook forwarding",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "survey",
+    "acset",
+    "helpdesk",
+    "discord",
+    "webhook"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Survei Kepuasan Pengguna Helpdesk Acset</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content card">
+        <img src="logo.png" alt="ACSET" class="hero-logo" />
+        <h1>Survei Kepuasan Pengguna Helpdesk Acset</h1>
+        <p class="subtitle">Survei ini bertujuan untuk meningkatkan kualitas layanan aplikasi Helpdesk Acset. Jawaban Anda bersifat rahasia dan hanya digunakan untuk pengembangan.</p>
+        <form id="identityForm" class="identity-form">
+          <h3 class="section-title">Data Diri</h3>
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" name="nama" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="nohp">No HP</label>
+              <input type="tel" id="nohp" name="nohp" required />
+            </div>
+            <div class="form-group">
+              <label for="nrp">NRP</label>
+              <input type="text" id="nrp" name="nrp" required />
+            </div>
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn btn-primary">Mulai Survei</button>
+          </div>
+          <div id="identityStatus" class="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+    <div class="hero-accent"></div>
+  </header>
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Acset - Helpdesk</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/index.js"></script>
+</body>
+</html>

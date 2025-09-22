@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Survei - Helpdesk Acset</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="survey-page">
+  <header class="page-header">
+    <div class="container header-inner">
+      <div class="header-brand">
+        <img src="logo.png" alt="ACSET" class="brand-logo" />
+        <span class="brand-title">Survei Helpdesk Acset</span>
+      </div>
+      <a href="/" class="back-link">← Kembali</a>
+    </div>
+  </header>
+  <main class="container">
+    <div class="card">
+      <h2>Form Survei</h2>
+      <p class="subtitle">Mohon isi survei berikut untuk membantu kami meningkatkan kualitas layanan aplikasi Helpdesk Acset.</p>
+      <div id="identSummary" class="status"></div>
+      <form id="surveyForm">
+        
+
+        <section>
+          <h3 class="section-title">Pertanyaan Skala Likert</h3>
+          <p class="help-text">1 = Sangat Tidak Puas, 5 = Sangat Puas</p>
+
+          <div class="likert-item">
+            <label>Kemudahan penggunaan aplikasi</label>
+            <div class="likert">
+              <input type="radio" name="kemudahan" value="1" required />
+              <input type="radio" name="kemudahan" value="2" />
+              <input type="radio" name="kemudahan" value="3" />
+              <input type="radio" name="kemudahan" value="4" />
+              <input type="radio" name="kemudahan" value="5" />
+            </div>
+            <div class="scale-hint"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+          </div>
+
+          <div class="likert-item">
+            <label>Kecepatan akses aplikasi</label>
+            <div class="likert">
+              <input type="radio" name="kecepatan" value="1" required />
+              <input type="radio" name="kecepatan" value="2" />
+              <input type="radio" name="kecepatan" value="3" />
+              <input type="radio" name="kecepatan" value="4" />
+              <input type="radio" name="kecepatan" value="5" />
+            </div>
+            <div class="scale-hint"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+          </div>
+
+          <div class="likert-item">
+            <label>Tampilan & desain aplikasi</label>
+            <div class="likert">
+              <input type="radio" name="tampilan" value="1" required />
+              <input type="radio" name="tampilan" value="2" />
+              <input type="radio" name="tampilan" value="3" />
+              <input type="radio" name="tampilan" value="4" />
+              <input type="radio" name="tampilan" value="5" />
+            </div>
+            <div class="scale-hint"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+          </div>
+
+          <div class="likert-item">
+            <label>Kelengkapan fitur yang tersedia</label>
+            <div class="likert">
+              <input type="radio" name="fitur" value="1" required />
+              <input type="radio" name="fitur" value="2" />
+              <input type="radio" name="fitur" value="3" />
+              <input type="radio" name="fitur" value="4" />
+              <input type="radio" name="fitur" value="5" />
+            </div>
+            <div class="scale-hint"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+          </div>
+
+          <div class="likert-item">
+            <label>Stabilitas aplikasi (bug/error)</label>
+            <div class="likert">
+              <input type="radio" name="stabilitas" value="1" required />
+              <input type="radio" name="stabilitas" value="2" />
+              <input type="radio" name="stabilitas" value="3" />
+              <input type="radio" name="stabilitas" value="4" />
+              <input type="radio" name="stabilitas" value="5" />
+            </div>
+            <div class="scale-hint"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+          </div>
+
+          <div class="likert-item">
+            <label>Keamanan & privasi aplikasi</label>
+            <div class="likert">
+              <input type="radio" name="keamanan" value="1" required />
+              <input type="radio" name="keamanan" value="2" />
+              <input type="radio" name="keamanan" value="3" />
+              <input type="radio" name="keamanan" value="4" />
+              <input type="radio" name="keamanan" value="5" />
+            </div>
+            <div class="scale-hint"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+          </div>
+
+          <div class="likert-item">
+            <label>Kesesuaian aplikasi dengan kebutuhan Anda</label>
+            <div class="likert">
+              <input type="radio" name="kesesuaian" value="1" required />
+              <input type="radio" name="kesesuaian" value="2" />
+              <input type="radio" name="kesesuaian" value="3" />
+              <input type="radio" name="kesesuaian" value="4" />
+              <input type="radio" name="kesesuaian" value="5" />
+            </div>
+            <div class="scale-hint"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+          </div>
+
+          <div class="likert-item">
+            <label>Kualitas layanan bantuan/support (jika pernah digunakan)</label>
+            <div class="likert">
+              <input type="radio" name="support" value="1" required />
+              <input type="radio" name="support" value="2" />
+              <input type="radio" name="support" value="3" />
+              <input type="radio" name="support" value="4" />
+              <input type="radio" name="support" value="5" />
+            </div>
+            <div class="scale-hint"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+          </div>
+
+          <div class="likert-item">
+            <label>Kepuasan keseluruhan</label>
+            <div class="likert">
+              <input type="radio" name="keseluruhan" value="1" required />
+              <input type="radio" name="keseluruhan" value="2" />
+              <input type="radio" name="keseluruhan" value="3" />
+              <input type="radio" name="keseluruhan" value="4" />
+              <input type="radio" name="keseluruhan" value="5" />
+            </div>
+            <div class="scale-hint"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="section-title">Pertanyaan Terbuka</h3>
+          <div class="form-group">
+            <label for="saran">Apa saran Anda untuk pengembangan aplikasi ini?</label>
+            <textarea id="saran" name="saran" rows="4" placeholder="Tulis saran Anda di sini..."></textarea>
+          </div>
+        </section>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      <div id="formStatus" class="status" aria-live="polite"></div>
+    </div>
+  </main>
+  <div class="page-accent" aria-hidden="true"></div>
+
+  <script src="/survey.js"></script>
+</body>
+</html>
